@@ -1,0 +1,49 @@
+﻿<!--
+** Name: config.xml
+** Description: This configuration document is necessary for all apps. Some elements here are mandatory while others are optional.
+** Reference: http://developer.blackberry.com/html5/documentation/working_with_config_xml_file_1866970_11.html
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="2.0.0.0" id="your-app-id">
+ 
+	<author href="http://www.author-website.com/" rim:copyright="Copyright 1998-2012 Author Company">Author company</author>
+	<name>Your application name</name>
+	<description>Your application description</description>
+	
+	<!--Some sample permission parameters- add/remove as needed-->
+	<rim:permissions>
+		<rim:permit>access_shared</rim:permit>
+		<rim:permit>access_location_services</rim:permit>
+		<rim:permit>read_geolocation</rim:permit>
+		<rim:permit>use_camera</rim:permit>  
+	</rim:permissions>
+	
+	<!--Your app icon as it will appear on the phone menu- change as needed-->
+	<icon src="icons/icon-150.png"/>
+	
+	<!--Your app splash screen- add/remove as needed- by having multiple sizes, the device will pick the best suited file at runtime-->
+	<rim:splash src="splash-1280x768.png"/>
+	<rim:splash src="splash-768x1280.png"/>
+	
+	<!--The starting page of your app- change as needed-->
+	<content src="index.html" rim:allowInvokeParams="true"/>
+	
+	<!--Some possible feature elements that your app may use- these are LOCAL domain features- change as needed-->
+	<feature id="blackberry.ui.dialog"/>
+	<feature id="enable-flash"/>
+	<feature id="blackberry.app.orientation">
+		<param name="mode" value="portrait" />
+	</feature>
+	<feature id="blackberry.app">
+		<param name="backgroundColor" value="0xFFFF0000" />
+	</feature>
+	
+	<!--Some possible feature elements that your app may use- these are EXTERNAL domain features- change as needed-->
+	<access uri="http://www.somedomain.com" subdomains="true">
+		<feature id="blackberry.app" required="true" version="1.0.0"/>
+		<feature id="blackberry.invoke" required="true" version="1.0.0"/>
+	</access>
+	
+	<license href="http://www.your-app-license.com/"/>
+	
+</widget>
