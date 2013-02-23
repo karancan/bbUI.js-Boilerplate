@@ -10,8 +10,8 @@ The following is a description of all files found in this project based on wheth
 ### Mandatory/Recommended
 
 * config.xml: 
-* icon.png: 
-* splash.png: 
+* img/icon.png: 
+* img/splash.png: 
 * index.html: 
 
 ### Optional
