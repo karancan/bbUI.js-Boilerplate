@@ -18,7 +18,7 @@ The following is a description of all files found in this project based on wheth
 
 * README.md:
 * HTML files: 
-* img directory: contains all the images that are used including the app icon, the splash screen image and the native BlackBerry 10 icons 
+* img directory: contains all the images that are used including the app icon, the splash screen image and the native [BlackBerry 10 icons](http://developer.blackberry.com/design/bb10/) 
 * css directory: 
 * js directory: 
 
