@@ -22,8 +22,8 @@
 	<icon src="img/icon-114px-114px.png"/>
 	
 	<!--Your app splash screen- add/remove as needed- by having multiple sizes, the device will pick the best suited file at runtime-->
-	<rim:splash src="splash-1280px-768px.png"/>
-	<rim:splash src="splash-768px-1280px.png"/>
+	<rim:splash src="img/splash-1280px-768px.png"/>
+	<rim:splash src="img/splash-768px-1280px.png"/>
 	
 	<!--The starting page of your app- change as needed-->
 	<content src="index.html" rim:allowInvokeParams="true"/>

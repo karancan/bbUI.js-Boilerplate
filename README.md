@@ -9,18 +9,17 @@ The following is a description of all files found in this project based on wheth
 
 ### Mandatory/Recommended
 
-* config.xml: 
-* img/icon.png: 
-* img/splash.png: 
-* index.html: 
+* config.xml: specifies the applicatio name, application permissiongs, application starting point, author, description, namespace
+* img/icon-114px-114px.png: the application icon that will be visible on the phones menu screen. Must be 114px by 114px. 
+* img/splash-1280px-768px.png and img/splash-768px-1280px.png: the application splash screens. The image that is 1280px by 768px is the horizontal orientation and the image that is 768px by 1280px is used in the vertical orientation. It is not necessary to have both. If there is no splash screen specified, the phone will revert to the default BB10 splash screen.
+* index.html: this is the starting point of the application 
+* js directory: all the scripts used by the applcation. It is not neccessary to have them in this folder but it makes things more organized. The bbui.js framework is in this folder.
+* css directory: all the stylesheets used by the application. It is not necessary to have them in this folder but it makes things more organized. The bbui.css stylesheet that complements bbui.js is in this folder.
+* img directory: contains all the images that are used including the app icon, the splash screen image and the native [BlackBerry 10 icons](http://developer.blackberry.com/design/bb10/) 
 
 ### Optional
 
-* README.md:
-* HTML files: 
-* img directory: contains all the images that are used including the app icon, the splash screen image and the native [BlackBerry 10 icons](http://developer.blackberry.com/design/bb10/) 
-* css directory: 
-* js directory: 
+* README.md: description of the project on GitHub
 
 ## Authors
 
