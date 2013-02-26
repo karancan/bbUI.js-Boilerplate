@@ -1,23 +1,27 @@
+<!--This will be the only HTML page that contains the head and body tags. All other pages will be AJAX'ed to make the application faster-->
 <!DOCTYPE html>
 <html> 
 	<head>
 	    <title>Sample App Title</title>
-		<script src="local:///chrome/webworks.js" type="text/javascript"></script>
+		<!--Stylesheet includes-->
 	    <link rel="stylesheet" href="css/bbui.css" />
 		<link rel="stylesheet" href="css/boilerplate.css" />
-	    <script type="text/javascript" src="js/bbui.js"></script>
+	    <!--Script includes-->
+		<script type="text/javascript" src="js/bbui.js"></script>
 		<script type="text/javascript" src="js/boilerplate.js"></script>
+		<script src="local:///chrome/webworks.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			console.log("here");
+			document.addEventListener('webworksready', function(e){
+				bb.init();
+				//AJAX in the first page of the application
+				bb.pushScreen('menu.html', 'menu');
+			}, false);
+		</script>
 	</head>
 	<body onload="">
-		<div data-role="page" id="index-page" data-theme="c">
-			<div data-role="header" data-theme="a" data-position="fixed">
-				<h1>Sample App</h1>
-			</div>
-			<div data-role="content" data-theme="c">	
-			</div>
-			<div data-role="footer" data-position="fixed">
-				
-			</div>
-		</div>
+		<!--Start: part of page that has the content needed and will be replaced in other pages-->
+		<!-- THis is where all other pages such as menu.htm will be put in -->
+		<!--End: part of page that has the content needed and will be replaced in other pages-->
 	</body>
 </html>
