@@ -5,13 +5,11 @@ A boilerplate application built with bbUI.js as a framework to facilitate easy b
 
 <hr>
 
-## Before building your application
+## Step 1 of 3: Before building your application
 
 ### Coming soon
 
-<hr>
-
-## Building your application
+## Step 2 of 3: Building your application
 
 ### Contents
 
@@ -32,9 +30,7 @@ The following is a description of all files found in this project based on wheth
 
 * <b>README.md:</b> description and documentation of the project on GitHub.
 
-<hr>
-
-## After building your application
+## Step 3 of 3: After building your application
 
 ### Coming soon
 
