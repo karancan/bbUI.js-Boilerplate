@@ -15,16 +15,13 @@
 	<!-- The page title -->
 	<div data-bb-type="title" data-bb-caption="Sample App Menu"></div>
 	
-	<!-- The grid of menu options -->
-	<div data-bb-type="grid-layout" data-bb-header-justify="left" data-bb-header-style="solid">
-		<div data-bb-type="group" data-bb-title="Menu group 1">
-			<div data-bb-type="row">
-				<div data-bb-type="item" data-bb-img="1.jpg" data-bb-title="Hello">Web SQL database</div>
-			</div>
-			<div data-bb-type="row">
-				<div data-bb-type="item" data-bb-img="1.jpg" data-bb-title="Hello">World</div>
-			</div>
-		</div>
+	<!-- The list of menu options -->
+	<div data-bb-type="image-list" data-bb-header-justify="left" >
+		<div data-bb-type="header">Database stuff</div>
+		<div data-bb-type="item" onclick="bb.pushScreen('grid.htm', 'grid');" data-bb-img="images/icons/icon6.png" data-bb-title="Landscape Image Grid">Layout content in an Image Grid</div>
+		<div data-bb-type="item" onclick="bb.pushScreen('gridSquare.htm', 'gridSquare');" data-bb-img="images/icons/icon4.png" data-bb-title="Square Image Grid">Layout content in an Image Grid</div> 
+		<div data-bb-type="item" onclick="bb.pushScreen('imageListAndGrid.htm', 'imageListAndGrid');" data-bb-img="images/icons/icon10.png" data-bb-title="Grid &amp; Image List">Combine a Grid and Image list</div>
+		<div data-bb-type="header">Other stuff</div>
 	</div>
 	
 </div>
