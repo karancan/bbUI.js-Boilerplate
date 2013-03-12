@@ -1,27 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
 <!--This will be the only HTML page that contains the head and body tags. All other pages will be AJAX'ed to make the application faster-->
-<!DOCTYPE html>
 <html> 
 	<head>
-	    <title>Sample App Title</title>
+		<meta name="x-blackberry-defaultHoverEffect" content="false" />
+		<title>Sample App Title</title>
 		<!--Stylesheet includes-->
-	    <link rel="stylesheet" href="css/bbui.css" />
-		<link rel="stylesheet" href="css/boilerplate.css" />
-	    <!--Script includes-->
+		<link  rel="stylesheet" type="text/css" href="css/bbui.css"></link>
+		<!--Script includes-->
 		<script type="text/javascript" src="js/bbui.js"></script>
-		<script type="text/javascript" src="js/boilerplate.js"></script>
-		<script src="local:///chrome/webworks.js" type="text/javascript"></script>
+		<script type="text/javascript" src="local:///chrome/webworks.js"></script>
 		<script type="text/javascript">
-			console.log("here");
-			document.addEventListener('webworksready', function(e){
-				bb.init();
-				//AJAX in the first page of the application
-				bb.pushScreen('menu.html', 'menu');
+			var webworksreadyFired = false;
+			document.addEventListener('webworksready', function(e) {
+				// This is code to ensure that if webworksready is fired multiple times we still only init() one time
+				if (webworksreadyFired) return;
+				webworksreadyFired = true;
+				// Load our first page i.e. menu.htm into the <body>
+				bb.pushScreen('menu.htm', 'menu');
 			}, false);
+			
+			// Fire the webworksready event for PlayBook and BBOS
+			window.addEventListener('load',function() {
+				if (navigator.userAgent.indexOf('BB10') < 0) {
+					var evt = document.createEvent('Events');
+					evt.initEvent('webworksready', true, true);
+					document.dispatchEvent(evt);
+				}
+			});
 		</script>
 	</head>
-	<body onload="">
+	<body>
 		<!--Start: part of page that has the content needed and will be replaced in other pages-->
-		<!-- THis is where all other pages such as menu.htm will be put in -->
+		<!-- This is where all other pages such as menu.htm will be put in so please leave every within the <body> tag blank -->
 		<!--End: part of page that has the content needed and will be replaced in other pages-->
 	</body>
 </html>
