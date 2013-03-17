@@ -5,8 +5,6 @@ A boilerplate application built with bbUI.js as a framework to facilitate easy b
 
 Read on if you want to write the code for your application using a boilerplate as your lanch pad. However, there are tools out there such as the [BlackBerry App Generator](http://www.blackberryappgenerator.com/blackberry/) that create your application for you quickly albeit with less flexibility.
 
-<hr>
-
 ## Step 1 of 3: Before building your application
 
 Now that you've decided to build an application for BlackBerry 10 devices, there are a few steps to be taken in order to ensure that you can build your application successfully:
@@ -47,7 +45,16 @@ The following is a description of all files found in this project based on wheth
 
 ## Step 3 of 3: After building your application
 
-### Coming soon
+Now that you are satisfied with the way your application has come about, it is time to get it into the [BlackBerry App World](http://appworld.blackberry.com/). 
+
+* It would be good to start off by requesting a [Vendor account](https://appworld.blackberry.com/isvportal/). This is neccessary in order to publish your application and it can sometimes take a couple days for your Vendor account to get approved.
+* While waiting for your Vendor account to be approved, you will want to make sure that you have your icons ready (as specified in Step 2). You should also get some screeshots of your application ready. When submitting the app to the App World, you will have the option to add these screenshots.
+* If your app has any content that is the property of another invidual or organization, be sure that you have the right to use this content and that you have given credit where due.
+* Download the [WebWorks SDK](http://developer.blackberry.com/html5/download/sdk/). The Ripple Emulator needs this to package your app.
+* Register for your signing keys [here](https://www.blackberry.com/SignedKeys/codesigning.html). After you have recieved your signing keys, follow the instructions [here](http://developer.blackberry.com/html5/documentation/signing_setup_bb10_apps_2008396_11.html) to set up your computer to be able to sign your application.
+* The Ripple Emulator helps you to quickly build and package your app without the need for any command line tools. Instructions are provided [here](http://developer.blackberry.com/html5/documentation/packaging_your_app_in_ripple_1904611_11.html).
+
+You should now have your packaged application in the form of a `.bar` file- this is what you will submited to the App World using your [Vendor account](https://appworld.blackberry.com/isvportal/).
 
 ## Authors
 
@@ -57,4 +64,4 @@ The following is a description of all files found in this project based on wheth
 
 ### Disclaimer
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE 
+THE CODE HERE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
