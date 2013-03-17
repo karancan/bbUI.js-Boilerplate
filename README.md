@@ -3,15 +3,15 @@ bbUI.js-Boilerplate
 
 A boilerplate application built with bbUI.js as a framework to facilitate easy building of BlackBerry10 applications.
 
-Read on if you want to write the code for your application using a boilerplate as your lanch pad. However, there are tools out there such as the [BlackBerry App Generator](http://www.blackberryappgenerator.com/blackberry/) that create your application for you quickly albeit with less flexibility.
+Read on if you want to write the code for your application using a boilerplate as your launch pad. However, there are tools out there such as the [BlackBerry App Generator](http://www.blackberryappgenerator.com/blackberry/) that can create your application for you quickly albeit with less flexibility.
 
 ## Step 1 of 3: Before building your application
 
 Now that you've decided to build an application for BlackBerry 10 devices, there are a few steps to be taken in order to ensure that you can build your application successfully:
 
-* For most applications and developers, the use of a service such as [GitHub](http://www.github.com) is recommended. This allows you to track the progress of your application as it is developed, share your code with other developers and also track issues. Since private repositories on GitHub are not free, an alternative to consider would be [Bitbucket](http://www.bitbucket.org).
-* Once you have your porject repository set up, you can start track your application ideas and requirements using built in issue tracking tools. This helps the [agile](http://en.wikipedia.org/wiki/Agile_software_development) development process.
-* To test your application idea and to make some of those ideas more concrete, it could be useful to prototpe the screens of your application using a tool [such as WireFrameSketcher](http://wireframesketcher.com/). There are several such tools out there depending on what your looking for.
+* For most applications and developers, the use of a service such as [GitHub](http://www.github.com) is recommended. This allows you to track the progress of your application as it is developed, share your code with other developers and handle issue tracking. Since private repositories on GitHub are not free, an alternative to consider would be [Bitbucket](http://www.bitbucket.org).
+* Once you have your project repository set up, you can start track your application ideas and requirements using built in issue tracking tools. This helps the [agile](http://en.wikipedia.org/wiki/Agile_software_development) development process.
+* To test your applications concept and to make some of your ideas more concrete, it could be useful to prototpe the screens of your application using a tool [such as WireFrameSketcher](http://wireframesketcher.com/). There are several such tools out there depending on what your looking for.
 * And finally, some of you first time developers out there may wish to brush up on your [HTML, CSS and JavaScript](http://www.webappers.com/2009/08/10/70-must-have-css3-and-html5-tutorials-and-resources/) skills. Recently, there have been some powerful new features added to HTML (in the form of [HTML 5](http://www.html5rocks.com/)) and to CSS (in the form of [CSS 3](http://www.css3.info/)) so a quick read may be worthwhile.
 
 ## Step 2 of 3: Building your application
@@ -32,7 +32,7 @@ The following is a description of all files found in this project based on wheth
 
 * <b>config.xml:</b> specifies the applicatio name, application permissiongs, application starting point, author, description, namespace.
 * <b>img/icon-114px-114px.png:</b> the application icon that will be visible on the phones menu screen. Must be 114px by 114px. 
-* <b>img/splash-1280px-768px.png and img/splash-768px-1280px.png:</b> the application splash screens. The image that is 1280px by 768px is the horizontal orientation and the image that is 768px by 1280px is used in the vertical orientation. It is not necessary to have both. If there is no splash screen specified, the phone will revert to the default BB10 splash screen.
+* <b>img/splash-1280px-768px.png and img/splash-768px-1280px.png:</b> the application splash screens. The image that is 1280px by 768px is the horizontal orientation and the image that is 768px by 1280px is used in the vertical orientation. It is not necessary to have both. If there is no splash screen specified, the phone will revert to the default BB10 splash screen. If you are supporting multiple BB10 devices, you may want to add splash screens that cater to the screen sizes of each device type.
 * <b>index.html:</b> this is the starting point of the application. Loads all the necessary scripts and stylesheets and then loads in content pages through AJAX.
 * <b>menu.html:</b> this if the first content page to be loaded in through index.htm and contains a list of options. 
 * <b>js directory:</b> all the scripts used by the applcation. It is not neccessary to have them in this folder but it makes things more organized. The bbui.js framework is in this folder.
@@ -47,8 +47,9 @@ The following is a description of all files found in this project based on wheth
 
 Now that you are satisfied with the way your application has come about, it is time to get it into the [BlackBerry App World](http://appworld.blackberry.com/). 
 
-* It would be good to start off by requesting a [Vendor account](https://appworld.blackberry.com/isvportal/). This is neccessary in order to publish your application and it can sometimes take a couple days for your Vendor account to get approved.
-* While waiting for your Vendor account to be approved, you will want to make sure that you have your icons ready (as specified in Step 2). You should also get some screeshots of your application ready. When submitting the app to the App World, you will have the option to add these screenshots.
+* It would be good to start off by requesting a [Vendor account](https://appworld.blackberry.com/isvportal/) as it can sometimes take a couple days for your Vendor account to be approved. You have to have a Vendor account in order to publish your application.
+* While waiting for your Vendor account to be approved, you will want to make sure that you have your icons ready (as specified in Step 2). You should also get some screenshots of your application ready. When submitting the app to the App World, you will have the option to add these screenshots (these screenshots will be displayed in the App World on your product page).
+* During the process of submitting your app to the App World, if you are representing a company, you would have to have a company logo. If you are an individual, you can submit your personal logo.
 * If your app has any content that is the property of another invidual or organization, be sure that you have the right to use this content and that you have given credit where due.
 * Download the [WebWorks SDK](http://developer.blackberry.com/html5/download/sdk/). The Ripple Emulator needs this to package your app.
 * Register for your signing keys [here](https://www.blackberry.com/SignedKeys/codesigning.html). After you have recieved your signing keys, follow the instructions [here](http://developer.blackberry.com/html5/documentation/signing_setup_bb10_apps_2008396_11.html) to set up your computer to be able to sign your application.
