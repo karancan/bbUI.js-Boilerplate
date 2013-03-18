@@ -10,15 +10,17 @@
 		<script type="text/javascript" src="js/bbui.js"></script>
 		<script type="text/javascript" src="local:///chrome/webworks.js"></script>
 		<script type="text/javascript">
-			var webworksreadyFired = false;
+			var webworksreadyFired = false;;
+				
 			document.addEventListener('webworksready', function(e) {
 				// This is code to ensure that if webworksready is fired multiple times we still only init() one time
 				if (webworksreadyFired) return;
 				webworksreadyFired = true;
 				// Load our first page i.e. menu.htm into the <body>
+				bb.init();
 				bb.pushScreen('menu.htm', 'menu');
 			}, false);
-			
+
 			// Fire the webworksready event for PlayBook and BBOS
 			window.addEventListener('load',function() {
 				if (navigator.userAgent.indexOf('BB10') < 0) {
