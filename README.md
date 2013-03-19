@@ -41,6 +41,13 @@ The following is a description of all files found in this project based on wheth
 
 #### Optional files
 
+* <b>user-interface.htm:</b> examples of some interesting UI elements as well as a link back to the [bbUI.js Wiki](https://github.com/blackberry/bbUI.js/wiki) which has documentation of all UI elements supported by it.
+* <b>storage-websql.htm:</b> examples of how to use a WebSQL database within your application i.e. creating tables, adding data to tables, removing data from tables and selection data from tables.
+* <b>storage-localstorage.htm:</b> examples of how to use HTML5 localstorage within your application i.e. setting and retreiving key value pairs.
+* <b>invocations-social.htm:</b> examples of how to invoke and send text and other data from your app to apps like acebook, Twitter, BBM, etc.
+* <b>invocations-system.htm:</b> examples of how to invoke system level features such as Settings, Wifi, Help menu, etc.
+* <b>info-guide.htm:</b>
+* <b>info-help.htm:</b>
 * <b>README.md:</b> description and documentation of the project on GitHub.
 
 ## Step 3 of 3: After building your application
