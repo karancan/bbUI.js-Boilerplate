@@ -1,11 +1,33 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
-
-<div data-bb-type="screen" data-bb-effect="fade">
-	<div data-bb-type="image-list" data-bb-header-justify="left" >
-		<div data-bb-type="header">BlackBerry 10 Only</div>
-		<div data-bb-type="item" onclick="bb.pushScreen('grid.htm', 'grid');" data-bb-img="images/icons/icon6.png" data-bb-title="Landscape Image Grid">Layout content in an Image Grid</div>
-		<div data-bb-type="item" onclick="bb.pushScreen('gridSquare.htm', 'gridSquare');" data-bb-img="images/icons/icon4.png" data-bb-title="Square Image Grid">Layout content in an Image Grid</div> 
-		<div data-bb-type="item" onclick="bb.pushScreen('imageListAndGrid.htm', 'imageListAndGrid');" data-bb-img="images/icons/icon10.png" data-bb-title="Grid &amp; Image List">Combine a Grid and Image list</div>
-	</div>
-</div>
+<!--This page is AJAX'ed in by index.htm when it is ready. Each page that is AJAX'ed in should have a root <div> with attribute data-bb-type=screen -->
+<!-- The attribute data-bb-effect tells the page how to transition in. Possible options: "none", "fade", "slide-left", "slide-right", "slide-up", "slide-down" -->
+<div data-bb-type="screen" data-bb-effect="slide-up">
 	
+	<!-- Screen specific styles -->
+	<style type="text/css">
+	
+	</style>
+	
+	<!-- Screen specific scripts -->
+	<script type="text/javascript">
+	
+	</script>
+	
+	<!-- The page title -->
+	<div data-bb-type="title" data-bb-caption="bbUI.js Boilerplate"></div>
+	
+	<!-- The list of menu options -->
+	<div data-bb-type="image-list" data-bb-header-justify="left" data-bb-style="arrowlist">
+		<div data-bb-type="header">User Interface</div>
+		<div data-bb-type="item" onclick="bb.pushScreen('user-interface.htm', 'ui');" data-bb-img="img/bb10/ic_edit_profile.png" data-bb-title="User interface options"></div>
+		<div data-bb-type="header">Storage Options</div>
+		<div data-bb-type="item" onclick="bb.pushScreen('storage-websql.htm.htm', 'websql');" data-bb-img="img/bb10/ic_view_details.png" data-bb-title="Web SQL"></div>
+		<div data-bb-type="item" onclick="bb.pushScreen('storage-localstorage.htm', 'localstorage');" data-bb-img="img/bb10/ic_view_details.png" data-bb-title="localStorage"></div>
+		<div data-bb-type="header">Invocation Functionality</div>
+		<div data-bb-type="item" onclick="bb.pushScreen('invocations-social.htm', 'inv-social');" data-bb-img="img/bb10/ic_share.png" data-bb-title="Social invocations"></div>
+		<div data-bb-type="item" onclick="bb.pushScreen('invocations-system.htm', 'inv-system');" data-bb-img="img/bb10/ic_settings.png" data-bb-title="System invocations"></div>
+		<div data-bb-type="header">FAQ and Info</div>
+		<div data-bb-type="item" onclick="bb.pushScreen('info-guide.htm', 'guide');" data-bb-img="img/bb10/ic_info.png" data-bb-title="Boilerplate guide"></div>
+		<div data-bb-type="item" onclick="bb.pushScreen('info-help.htm', 'help');" data-bb-img="img/bb10/ic_help.png" data-bb-title="Help/ contact/ contribute"></div>
+	</div>
+	
+</div>
