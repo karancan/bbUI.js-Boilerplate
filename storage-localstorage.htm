@@ -9,12 +9,78 @@
 	
 	<!-- Screen specific scripts -->
 	<script type="text/javascript">
-	
+		
+		//The following four functions control what happens the user clicks one of the four pill buttons
+		
+		function showIntro(){
+			document.getElementById('ls-intro').style.display = 'block';
+			document.getElementById('ls-set').style.display = 'none';
+			document.getElementById('ls-get').style.display = 'none';
+			document.getElementById('ls-delete').style.display = 'none';
+		}
+		
+		function showSet(){
+			document.getElementById('ls-intro').style.display = 'none';
+			document.getElementById('ls-set').style.display = 'block';
+			document.getElementById('ls-get').style.display = 'none';
+			document.getElementById('ls-delete').style.display = 'none';
+		}
+		
+		function showGet(){
+			document.getElementById('ls-intro').style.display = 'none';
+			document.getElementById('ls-set').style.display = 'none';
+			document.getElementById('ls-get').style.display = 'block';
+			document.getElementById('ls-delete').style.display = 'none';
+		}
+		
+		function showDelete(){
+			document.getElementById('ls-intro').style.display = 'none';
+			document.getElementById('ls-set').style.display = 'none';
+			document.getElementById('ls-get').style.display = 'none';
+			document.getElementById('ls-delete').style.display = 'block';
+		}
+		
 	</script>
 	
 	<!-- The page title -->
 	<div data-bb-type="title" data-bb-caption="Storage- localStorage"></div>
 
+	<!-- The tabs (pill buttons) that allow the user to switch between the multiple views  -->
+	<div data-bb-type="pill-buttons" id="myPillButtons">
+		<div data-bb-type="pill-button" data-bb-selected="true" onclick="showIntro()">Intro</div>
+		<div data-bb-type="pill-button" onclick="showSet()">Set</div>
+		<div data-bb-type="pill-button" onclick="showGet()">Get</div>
+		<div data-bb-type="pill-button" onclick="showDelete()">Delete</div>
+	</div>
+	
+	<!-- View 1/4 shows the "intro" section -->
+	<div data-bb-type="round-panel" id="ls-intro"> 
+		<div data-bb-type="label-control-container">
+			a
+		</div>
+	</div>
+	
+	<!-- View 2/4 shows the "set" section -->
+	<div data-bb-type="round-panel" id="ls-set" style="display:none;"> 
+		<div data-bb-type="label-control-container">
+			b
+		</div>
+	</div>
+	
+	<!-- View 3/4 shows the "get" section -->
+	<div data-bb-type="round-panel" id="ls-get" style="display:none;"> 
+		<div data-bb-type="label-control-container">
+			c
+		</div>
+	</div>
+	
+	<!-- View 4/4 shows the "delete" section -->
+	<div data-bb-type="round-panel" id="ls-delete" style="display:none;"> 
+		<div data-bb-type="label-control-container">
+			d
+		</div>
+	</div>
+	
 	<!-- Give your users the option to go back to the previous screen -->
 	<div data-bb-type="action-bar" data-bb-back-caption="Back"></div>
 	
