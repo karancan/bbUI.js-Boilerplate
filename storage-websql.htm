@@ -5,6 +5,50 @@
 	<!-- The page title -->
 	<div data-bb-type="title" data-bb-caption="Storage- WebSQL"></div>
 	
+	<!-- The tabs (pill buttons) that allow the user to switch between the multiple views  -->
+	<div data-bb-type="pill-buttons" id="myPillButtons">
+		<div data-bb-type="pill-button" data-bb-selected="true" onclick="showWebSqlIntro()">Intro</div>
+		<div data-bb-type="pill-button" onclick="showCreate()">Create</div>
+		<div data-bb-type="pill-button" onclick="showInsert()">Insert</div>
+		<div data-bb-type="pill-button" onclick="showSelect()">Select</div>
+		<div data-bb-type="pill-button" onclick="showRemove()">Delete</div>
+	</div>
+	
+	<!-- View 1/5 shows the "intro" section (initially displyed because the first pill button is active) -->
+	<div data-bb-type="round-panel" id="ws-intro"> 
+		<div data-bb-type="label-control-container">
+			<h1 style="text-align: center;">WebSQL allows you to have a SQL relational database within your app to store data</h1>
+		</div>
+	</div>
+	
+	<!-- View 2/5 shows the "create table" section -->
+	<div data-bb-type="round-panel" id="ws-create" style="display: none;"> 
+		<div data-bb-type="label-control-container">
+			b
+		</div>
+	</div>
+	
+	<!-- View 3/5 shows the "insert rows" section -->
+	<div data-bb-type="round-panel" id="ws-insert" style="display: none;"> 
+		<div data-bb-type="label-control-container">
+			c
+		</div>
+	</div>
+	
+	<!-- View 4/5 shows the "select rows" section -->
+	<div data-bb-type="round-panel" id="ws-select" style="display: none;"> 
+		<div data-bb-type="label-control-container">
+			d
+		</div>
+	</div>
+	
+	<!-- View 5/5 shows the "delete rows" section -->
+	<div data-bb-type="round-panel" id="ws-delete" style="display: none;"> 
+		<div data-bb-type="label-control-container">
+			e
+		</div>
+	</div>
+	
 	<!-- Give your users the option to go back to the previous screen -->
 	<div data-bb-type="action-bar" data-bb-back-caption="Back"></div>
 	
