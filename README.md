@@ -3,6 +3,8 @@ bbUI.js-Boilerplate
 
 A boilerplate application built with bbUI.js as a framework to facilitate easy building of BlackBerry10 applications.
 
+> This application will soon be part of the [BB10-Webworks-Community-Samples](https://github.com/karancan/BB10-WebWorks-Community-Samples)
+
 Read on if you want to write the code for your application using a boilerplate as your launch pad. However, there are tools out there such as the [BlackBerry App Generator](http://www.blackberryappgenerator.com/blackberry/) that can create your application for you quickly albeit with less flexibility.
 
 ## Step 1 of 3: Before building your application

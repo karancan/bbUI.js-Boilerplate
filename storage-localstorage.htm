@@ -9,35 +9,33 @@
 	<div data-bb-type="pill-buttons" id="myPillButtons">
 		<div data-bb-type="pill-button" data-bb-selected="true" onclick="showlocalStorageIntro()">Intro</div>
 		<div data-bb-type="pill-button" onclick="showSet()">Set</div>
-		<div data-bb-type="pill-button" onclick="showGet()">Get</div>
-		<div data-bb-type="pill-button" onclick="showDelete()">Delete</div>
+		<div data-bb-type="pill-button" onclick="showGet()">Fetch & Delete</div>
 	</div>
 	
-	<!-- View 1/4 shows the "intro" section (initially displyed because the first pill button is active) -->
+	<!-- View 1/3 shows the "intro" section (initially displyed because the first pill button is active) -->
 	<div data-bb-type="round-panel" id="ls-intro"> 
 		<div data-bb-type="label-control-container">
 			<h1 style="text-align: center;"> HTML5 localStorage allows for a convenient way of storing and retrieving simple key-value data</h1>
 		</div>
 	</div>
 	
-	<!-- View 2/4 shows the "set" section (initially not displayed) -->
+	<!-- View 2/3 shows the "set" section (initially not displayed) -->
 	<div data-bb-type="round-panel" id="ls-set" style="display:none;"> 
 		<div data-bb-type="label-control-container">
-			b
+			<h3>Set a key and it's value</h3>
+			<h5>Note: if a key already exists, it's value will be over written</h5>
+			<input type="text" id="ls-set-key" placeholder="Key">
+			<input type="text" id="ls-set-value" placeholder="Value">
+			<div data-bb-type="button" onclick="addKeyValuePair()">Add key value pair</div>
 		</div>
 	</div>
 	
-	<!-- View 3/4 shows the "get" section (initially not displayed) -->
-	<div data-bb-type="round-panel" id="ls-get" style="display:none;"> 
+	<!-- View 3/3 shows the "get" section (initially not displayed) -->
+	<div data-bb-type="round-panel" id="ls-get-delete" style="display:none;"> 
 		<div data-bb-type="label-control-container">
-			c
-		</div>
-	</div>
-	
-	<!-- View 4/4 shows the "delete" section (initially not displayed) -->
-	<div data-bb-type="round-panel" id="ls-delete" style="display:none;"> 
-		<div data-bb-type="label-control-container">
-			d
+			<h3>See all existing localStorage entries</h3>
+			<hr>
+			<div class="fetched-key-value-pairs"></div>
 		</div>
 	</div>
 	
